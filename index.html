@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My take on flappy bird game">
+    <meta name="author" content="Nuneke Kwetey">
+
+    <title>Flappy Sidemen</title>
+
+    <link href="public/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id='headDiv'>
+      <h1>PLAY FLAPPY BIRD</h1>
+      <p> press space bar to start and jump </p>
+    </div>
+    <div id='scoreDiv'>
+      <h1 class="highscore" >HIGHSCORE: <span id="highscore"></span></h1>
+      <h1>SCORE: <span id="score" class="score"></span></h1>
+    </div>
+    <div id='LoseDiv'>
+      <h1>YOU LOSE</h1>
+      <button onclick="reload()">Play again</button>
+    </div>
+    <div id='myContainer'></div>
+      
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="bird.js"></script>
+    <script src="pipe.js"></script>
+  </body>
+</html>

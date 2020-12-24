@@ -1,0 +1,48 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+#scoreDiv, #LoseDiv {
+	display: none;
+}
+
+.score {
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0%	{opacity: 1.0;}
+	30%  {opacity: 0.8;}
+	50%  {opacity: 0.4;}
+	70% {opacity: 0.8;}
+	100%  {opacity: 1.0;}
+}
+
+#LoseDiv button{
+	padding: 10px;
+	background-color: inherit;
+	border-radius: 15%;
+	border: solid 1px black;
+}
+
+#LoseDiv button:hover{
+	background-color: red;
+	opacity: 0.6;
+}
+
+#myContainer {
+	margin: 10px auto;
+}
+
+canvas {
+	margin: 0 auto;
+}
+
+.highscore {
+	color: blue;
+}
+/*audio {
+  display: none;
+}*/
